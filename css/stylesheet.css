@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+
+    --h1-font: Britannic;
+    --h2-font: Segoe UI;
+
+    /* dark theme */
+
+    --dark-background: #1b2430;
+    --dark-primary-text: #85139f;
+    --dark-secondary-text: #b2b7ca;
+    --dark-paragraph: #d6d5a8;
+
+    /* light theme */
+}
+
+body{
+    background-color: var(--dark-background);
+    margin: 0 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5vh;
+    margin-bottom: 20vh;
+}
+
+nav img {
+    width: 75px;
+    justify-self: flex-start;
+}
+
+nav ul {
+    
+}
+
+li{
+    text-decoration: none;
+}
