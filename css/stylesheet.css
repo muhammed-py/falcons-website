@@ -37,9 +37,22 @@ nav img {
 }
 
 nav ul {
-    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-family: var(--h2-font);
 }
 
 li{
     text-decoration: none;
+}
+
+.mode_switch {
+    width: 62px;
+    height: 95px;
+    background-color: var(--dark-paragraph);
+    position: absolute;
+    transform: translateX(80rem)
 }
