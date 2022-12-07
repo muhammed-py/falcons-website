@@ -24,11 +24,14 @@ body{
 }
 
 nav{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     margin-top: 2.5vh;
-    margin-bottom: 20vh;
+    padding-right: 10%;
+
 }
 
 nav img {
@@ -47,12 +50,51 @@ nav ul {
 
 li{
     text-decoration: none;
+    color: var(--dark-secondary-text);
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
 }
 
-.mode_switch {
-    width: 62px;
-    height: 95px;
-    background-color: var(--dark-paragraph);
-    position: absolute;
-    transform: translateX(80rem)
+li:hover{
+    color: var(--dark-primary-text);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25vh 0;
+}
+
+.container div {
+    text-align: center;
+}
+
+.container div h1 {
+    font-family: var(--h1-font);
+    margin: 5px;
+    font-size:65px;
+    color: var(--dark-primary-text);
+}
+
+.container div h3 {
+    margin-top: 5vh;
+    font-family: var(--h2-font);
+    font-size: 25px;
+    color: var(--dark-secondary-text);
+    line-height: 7.5vh;
+}
+
+hr {
+    width: 65%;
+    margin: 25vh auto;
+    height: 1px;
+    border: none;
+    background-color: var(--dark-secondary-text);
+}
+
+.container .sub_container h4 {
+    color: var(--dark-secondary-text);
+    margin: 2vh;
+    line-height: 5vh;
 }
