@@ -3,6 +3,7 @@ let body = document.querySelector('body'),
     h1 = document.querySelectorAll('h1'),
     h3 = document.querySelectorAll('h3'),
     h4 = document.querySelectorAll('h4'),
+    logo = document.querySelector('logo'),
     service = document.querySelector('.services'),
     goal = document.querySelector('.goal'),
     aboutUs = document.querySelector('.about_us'),
@@ -15,11 +16,7 @@ theme.addEventListener('click', () => {
     body.classList.toggle('light_background');
     body.classList.toggle('mark');
 
-    theme.innerHTML = "Dark Theme";
-
-    if (body.classList.contains('mark')) { theme.innerHTML = "Light Theme"; }
-
-    for (let i=0; i<li.length; i++) {
+    for (let i = 0; i < li.length; i++) {
         li[i].classList.toggle('light_secondary')
     }
 
@@ -34,4 +31,18 @@ theme.addEventListener('click', () => {
     for (let l = 0; l < h4.length; l++) {
         h4[l].classList.toggle('light_primary')
     }
+
+    
+
+    if (body.classList.contains('mark')) { 
+
+        theme.innerHTML = "Light Theme";
+        document.getElementById('logo').src = "images/logo dark g.png"
+        document.getElementById('logo2').src = "images/logo dark g.png"
+} else {
+
+        theme.innerHTML = "Dark Theme";
+        document.getElementById('logo').src = "images/logo light g.png"
+        document.getElementById('logo2').src = "images/logo light g.png"
+}
 })

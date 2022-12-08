@@ -118,10 +118,10 @@ hr {
     background-color: var(--ligh-background);
 }
 
-.light_primary {
+.container div .light_primary {
     color: var(--light-primary-text);
 }
 
-.light_secondary {
+.container div .light_secondary {
     color: var(--light-secondary-text);
 }
