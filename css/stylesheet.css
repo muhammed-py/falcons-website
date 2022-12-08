@@ -16,6 +16,11 @@
     --dark-paragraph: #d6d5a8;
 
     /* light theme */
+
+    --ligh-background:#eff5f5;
+    --light-primary-text: #497174;
+    --light-secondary-text: #0f244c;
+    --light-paragraph: #51557e;
 }
 
 body{
@@ -97,4 +102,26 @@ hr {
     color: var(--dark-secondary-text);
     margin: 2vh;
     line-height: 5vh;
+}
+
+.container .sub_container h4 a {
+    color: #5a0f6b;
+    text-decoration: none;
+    transition: ALL 300ms ease-in-out;
+}
+
+.container .sub_container h4 a:hover {
+    color: var(--dark-paragraph);
+}
+
+.light_background {
+    background-color: var(--ligh-background);
+}
+
+.light_primary {
+    color: var(--light-primary-text);
+}
+
+.light_secondary {
+    color: var(--light-secondary-text);
 }
