@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 let body = document.querySelector('body'),
     li = document.querySelectorAll('li'),
     h1 = document.querySelectorAll('h1'),
@@ -45,4 +47,47 @@ theme.addEventListener('click', () => {
         document.getElementById('logo').src = "images/logo light g.png"
         document.getElementById('logo2').src = "images/logo light g.png"
 }
+})
+
+document.getElementById('logo').addEventListener('click', () => {
+    document.getElementById('home').scrollIntoView();
+})
+
+service.addEventListener('click', () => {
+    document.getElementById('services').scrollIntoView();
+})
+
+goal.addEventListener('click', () => {
+    document.getElementById('goal').scrollIntoView();
+})
+
+aboutUs.addEventListener('click', () => {
+    document.getElementById('about_us').scrollIntoView();
+})
+
+
+
+// select when scroll
+
+window.addEventListener('scroll', function (event) {
+    var scroll = this.scrollY;
+    console.log(scroll)
+
+    if (scroll >= 700 && scroll <= 1700) {
+        service.classList.add('selected');
+    } else {
+        service.classList.remove('selected');
+    }
+
+    if (scroll >= 1700 && scroll <= 2800) {
+        goal.classList.add('selected');
+    } else {
+        goal.classList.remove('selected');
+    }
+
+    if (scroll >= 2800) {
+        aboutUs.classList.add('selected');
+    } else {
+        aboutUs.classList.remove('selected');
+    }
 })
